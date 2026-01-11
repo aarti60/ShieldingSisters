@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background Image */
+        .background-image {
+            background-image: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .signup-link a {
+            color: blue;
+            cursor: pointer;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="background-image">
+
+        <div class="container">
+
+            <!-- Login Form -->
+            <div class="form-container" id="login-form-container">
+                <h2>Login</h2>
+                <form id="login-form" onsubmit="return validateLoginForm()">
+                    <div class="input-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                    <p id="error-message" class="error-message"></p>
+                </form>
+                <p class="signup-link">New here? <a onclick="toggleForm()">Create an account</a></p>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="form-container" id="signup-form-container" style="display: none;">
+                <h2>Sign Up</h2>
+                <form id="signup-form" onsubmit="return validateSignupForm()">
+                    <div class="input-group">
+                        <label for="new-username">Username:</label>
+                        <input type="text" id="new-username" name="new-username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="new-password">Password:</label>
+                        <input type="password" id="new-password" name="new-password" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                    <p id="signup-error-message" class="error-message"></p>
+                </form>
+                <p class="signup-link">Already have an account? <a onclick="toggleForm()">Login</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

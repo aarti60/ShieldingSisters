@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Tips</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Full page background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=1350&q=80'); /* formal background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px 0;
+        }
+
+        /* Overlay for better readability */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 0;
+        }
+
+        .safety-tips-container {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            width: 90%;
+            background: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            padding: 30px 40px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .tip-card {
+            background: #f7f7f7;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .tip-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .tip-card h3 {
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .tip-card p {
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="safety-tips-container">
+        <h1>Essential Safety Tips for Women</h1>
+        <p>Your safety is our top priority. Follow these tips to stay safe in various situations:</p>
+
+        <div class="tips-grid">
+            <div class="tip-card">
+                <h3>1. Stay Alert</h3>
+                <p>Be aware of your surroundings and trust your instincts. Avoid distractions like looking at your phone while walking.</p>
+            </div>
+            <div class="tip-card">
+                <h3>2. Share Your Location</h3>
+                <p>Share your live location with trusted friends or family members, especially when traveling alone or at night.</p>
+            </div>
+            <div class="tip-card">
+                <h3>3. Emergency Contacts</h3>
+                <p>Save important emergency numbers (e.g., police, ambulance, women helpline) on speed dial for quick access.</p>
+            </div>
+            <div class="tip-card">
+                <h3>4. Avoid Unsafe Areas</h3>
+                <p>Stay in well-lit, crowded areas, especially at night. Avoid isolated locations whenever possible.</p>
+            </div>
+            <div class="tip-card">
+                <h3>5. Self-Defense Skills</h3>
+                <p>Learn basic self-defense techniques to protect yourself in dangerous situations. Carry tools like pepper spray if legal in your area.</p>
+            </div>
+            <div class="tip-card">
+                <h3>6. Secure Online Presence</h3>
+                <p>Avoid sharing personal information online. Keep your social media profiles private to protect your identity.</p>
+            </div>
+            <div class="tip-card">
+                <h3>7. Trust Your Intuition</h3>
+                <p>If something feels wrong, it probably is. Trust your gut feelings and take necessary
