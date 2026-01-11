@@ -1,1 +1,2 @@
 # ShieldingSisters
+Shielding Sisters is a digital women-safety system designed to protect and empower women in emergency situations. The project uses mobile and web technologies to provide quick access to help through features like a one-tap SOS alert, live GPS location sharing, and emergency contact notification. It aims to reduce response time during critical situations and improve personal safety in public and private spaces.
