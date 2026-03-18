@@ -1,0 +1,15 @@
+{
+  "name": "women-safety-project-main",
+  "version": "1.0.0",
+  "description": "first dowlnoad this zip, then extract files from zip, open visual studios, click on file, click on open folder them select extracted files , now again click on file in vs code then click on new window, a new window will be opened, click on new file , give your desired name , copy all files from old window and paste it in folder of new window, now select index.html from copied file then click on f5,",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
